@@ -7,12 +7,14 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>Better Today Tech</h1>
-        <p>
-        BTT is a small digital consultancy specializing 
-        {" "}
-        <br />
-        in crafting modern digital experiences
-        </p>
+        <div className={styles.about}>
+          <p>
+            BTT is a small digital consultancy 
+            <br />
+            specializing in crafting modern digital experiences
+          </p>
+        </div>
+     
 
 
       </main>
