@@ -9,9 +9,9 @@ export default function Home() {
         <h1>Better Today Tech</h1>
         <div className={styles.about}>
           <p>
-            BTT is a small digital consultancy 
+            BTT is a small digital consultancy specializing
             <br />
-            specializing in crafting modern digital experiences
+            in crafting modern digital experiences
           </p>
         </div>
      
