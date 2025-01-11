@@ -15,6 +15,12 @@
   gap: 64px;
   font-family: var(--font-geist-sans);
 }
+.wall {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 500px;
+}
 
 @media (prefers-color-scheme: dark) {
   .page {
@@ -108,6 +114,11 @@ a.secondary {
   flex-shrink: 0;
 }
 
+.rowOne {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
