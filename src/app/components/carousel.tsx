@@ -14,23 +14,7 @@ export default function Carousel ({reverse}: {reverse: boolean}): React.JSX.Elem
     return (
         <Box style={{overflowX: 'clip', overflowY: 'clip', width: '100%', height: '100%', display: 'flex', flexDirection: 'row'}}>
             <motion.div
-            initial={{ x: reverse ? "0%" : "0%" }}
-            animate={{ 
-                x: reverse ? "100%" : "-100%"
-            }}
-            transition={{ duration: 8, delay: 1, ease: "linear", repeat: Infinity, repeatType: "loop" }}
-            style={{
-                display: 'flex',
-                flexDirection: 'row',
-                gap: '10px'
-            }}
-        >
-            {imgs.map((photo) => {
-                return <Image key={photo.id} src={photo.src} alt={''} width={150} height={150}/>
-            })}
-        </motion.div>
-        <motion.div
-            initial={{x: reverse ? "-300%" : "1%" }}
+            initial={{ x: reverse ? "-105%" : "0%" }}
             animate={{ 
                 x: reverse ? "0%" : "-100%"
             }}
@@ -38,11 +22,28 @@ export default function Carousel ({reverse}: {reverse: boolean}): React.JSX.Elem
             style={{
                 display: 'flex',
                 flexDirection: 'row',
-                gap: '10px'
+                gap: '10px',
             }}
         >
             {imgs.map((photo) => {
-                return <Image key={photo.id} src={photo.src} alt={''} width={150} height={150}/>
+                return <Image key={photo.id} src={photo.src} alt={''} width={150} height={150} style={{borderRadius: 5}}/>
+            })}
+        </motion.div>
+        <motion.div
+            initial={{x: reverse ? "-102%" : "1%" }}
+            animate={{ 
+                x: reverse ? "0%" : "-100%"
+            }}
+            transition={{ duration: 8, delay: 1, ease: "linear", repeat: Infinity, repeatType: "loop" }}
+            style={{
+                display: 'flex',
+                flexDirection: 'row',
+                gap: '10px',
+                borderRadius: 5
+            }}
+        >
+            {imgs.map((photo) => {
+                return <Image key={photo.id} src={photo.src} alt={''} width={150} height={150} style={{borderRadius: 5}}/>
             })}
         </motion.div>
         </Box>

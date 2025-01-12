@@ -8,8 +8,8 @@ import * as motion from "motion/react-client"
 export default function Home() {
   return (
     <div className={styles.page}>
-         <h1>Better Today Tech</h1>
       <main className={styles.main}>
+        <h1>Better Today Tech</h1>
         <div className={styles.wall}>
           <Carousel reverse={false}/>
           <Carousel reverse={true}/>
@@ -20,10 +20,13 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ 
               opacity: 1
-          }}>
-            BTT is a small digital consultancy 
-            specializing in crafting modern
+          }}
+          style={{ textAlign: 'center' }}
+          >
+
+            BTT is a small digital consultancy
             <br/>
+            specializing in crafting modern
             digital experiences
           </motion.p>
         </div>
