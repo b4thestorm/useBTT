@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1>
+        <h1 className={styles.title}>
           Better Today Tech
         </h1>
         <div className={styles.wall}>
@@ -17,7 +17,6 @@ export default function Home() {
           <Carousel reverse={true}/>
           <Carousel reverse={false}/>
         </div>
-        {/* <div className={styles.about}> */}
         <motion.p
               initial={{ opacity: 0 }}
               animate={{ 
@@ -29,7 +28,6 @@ export default function Home() {
           specializing in crafting modern
           digital experiences
         </motion.p>
-        {/* </div> */}
       </main>
       <footer className={styles.footer}>
         <p>© 2025 UseBTT</p>
